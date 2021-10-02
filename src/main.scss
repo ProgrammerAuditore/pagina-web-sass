@@ -109,7 +109,7 @@ ul{
             
             @include btn(
             $bg-color: $terciary-color, 
-            $color: $secondary-color, 
+            $color: $font-color, 
             $bold : 'true'
             );
 
@@ -134,5 +134,24 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+}
+
+// Anidación para el contenido
+.row{
+
+    display: flex;
+    align-items: center;
+
+    .col{
+        width: 50%;
+    }
+
+    .col-30{
+        width: 30%;
+    }
+
+    .col-70{
+        width: 70%;
     }
 }
